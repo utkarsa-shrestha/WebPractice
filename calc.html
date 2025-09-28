@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let first_number = prompt("Enter the first number")
+        first_number = parseInt(first_number)
+
+        let second_number = prompt("Enter the second number")
+        second_number = parseInt(second_number)
+
+        //Inserting 2 values on variables first number and second number
+
+        let result = 0;
+        //creating a variable to display the result
+
+        alert("Enter the operation to perform:")//To show what to do
+        let opperation = prompt("\n 1) Addition \n 2) Substraction \n 3) Multiplication \n 4) Division")
+        //giving the users choices to choose
+
+        switch (opperation){ //use of switch case statement
+
+            case 'Addition':
+                result = first_number + second_number; 
+                alert(first_number + " + " + second_number + " = " + result)
+            break;
+
+            case 'Substraction':
+                result = first_number - second_number;
+                alert(first_number + " - " + second_number + " = " +  result)
+            break;
+
+            case 'Multiplication':
+                result = first_number * second_number;
+                alert(first_number + " * " + second_number + " = " + result)
+            break;
+
+            case 'Division':
+                result = first_number / second_number;
+                alert(first_number + " / " + second_number + " = " + result)
+            break;
+
+            default:
+                alert("Your given operation is not valid!")
+        }
+    </script>
+</body>
+</html>
