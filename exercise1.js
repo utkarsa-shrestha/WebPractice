@@ -23,7 +23,13 @@ while(user_input != random_number){
     no_of_guesses++
 }
 if(no_of_guesses == 1){
-    alert("Are you cheating?? you guessed it right!")
+    alert("You definitely cheated!!")
+}
+else if(no_of_guesses>=2 && no_of_guesses<=5){
+    alert("Your a g-g-g-g-g-g genius !!")
+}
+else if(no_of_guesses>5 && no_of_guesses<=7){
+    alert("Congratulations successful person !!")
 }
 else{
 alert("You finally guessed it right !")
