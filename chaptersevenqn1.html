@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .navigationbar{
+            display: flex;
+
+            gap: 20px;
+            
+        }
+        .navigationbar li{
+            list-style: none;
+            font: 30px;
+
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <script src="js.js">
+        document.querySelector('.navigationbar').firstElementChild.style.color = "red";
+    </script>
+    <nav>
+        <ul class="navigationbar">
+            <li>Home</li>
+            <li>HTML</li>
+            <li>JS</li>
+            <li>CSS</li>
+            <li>React</li>
+        </ul>
+    </nav>
+</body>
+</html>

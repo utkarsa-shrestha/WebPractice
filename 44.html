@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<script>
+    let div = document.querySelector('#hi');
+
+    let doc = document.createElement('p');
+    doc.textContent = 'HEllo'
+    div.insertAdjacentElement('beforebegin', doc) //before the element's opening tag
+    div.insertAdjacentElement('afterbegin', doc) //after the element's opening tag
+    div.insertAdjacentElement('beforeend', doc) //before the element's ending tag
+    div.insertAdjacentElement('afterend', doc)  //after the element's ending tag
+</script>
+<body>
+    <div id="hi">
+        <div class="hello">This is a div</div>
+    </div>
+</body>
+</html>

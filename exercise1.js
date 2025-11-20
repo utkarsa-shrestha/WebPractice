@@ -1,3 +1,5 @@
+//Exercise 1 - Create a guessing game 
+
 function getRandomInteger(min, max) { //to generate a random number
   return Math.floor(Math.random() * (max - min + 1)) + min;
 }

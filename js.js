@@ -1,0 +1,1 @@
+document.querySelector('.navigationbar').firstElementChild.style.color = "red";
